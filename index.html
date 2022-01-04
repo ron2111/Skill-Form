@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleS.css">
+    <title>Survey Form</title>
+    
+</head>
+<body>
+  <div class="main">
+    <h1 id="title"><u>My Survey Form</u></h1>
+    <p id="description">This is a sample Survey Form Project to enhance my HTML & CSS Skills.</p>
+ <div class="main-content">
+    <form id="survey-form">
+         <label for= "name" 
+         id="name-label">
+          Name
+         </label>
+             <input id="name"
+             type="text"
+             name="name-label" 
+             placeholder="Enter your Name"
+             required>
+
+         <label for= "email" 
+         id="email-label">
+          Email
+         </label>
+              <input id="email"
+              type="email"
+              name="email-label" 
+              placeholder="Enter Your Email "
+              required>
+          
+
+         <label for= "number" 
+         id="number-label">
+          Age
+         </label>
+             <input id="number"
+             type="number"
+             name="number-label"        
+             min="1"
+             max="100"
+             placeholder="Your Age(in yrs)"
+             required>
+         
+         <label for= "dropdown">Which option best describes your current occupation?</label>
+         <select id="dropdown">
+
+         <option value="full-time-student">
+             Full-Time Student</option>
+         <option value="part-time-student">
+             Part-Time Student</option>
+         <option value="full-time-job">Job(Full-Time)
+         </option>
+         <option value="part-time-job">Job(Part-Time)
+         </option>
+         <option value="business">Business</option>
+         <option value="other">Other</option>
+         </select>
+
+<!-- radio-button -->
+     <fieldset>
+       <legend>How would you rate my current HTMLS & CSS skills ?</legend>
+       <input type="radio" name="rate" checked id="5" value="5">
+       <label for= "5">5 🤩 </label><br>
+        <input type="radio" name="rate" id="4" value="4">
+       <label for= "4">4 😎</label><br>
+        <input type="radio" name="rate" id="3" value="3">
+       <label for= "3">3 🙂</label><br>
+        <input type="radio" name="rate" id="2" value="2">
+       <label for= "2">2 😥 </label><br>
+        <input type="radio" name="rate" id="1" value="1">
+       <label for= "1">1 😭</label>
+       <h5><i>Psst. Dont worry about the submission. I don't know JavaScript yet..</i></h5>
+         </fieldset>
+
+<!-- checked-box -->
+<p> What would you like to see improved in this sample form?</p>
+         <input type="checkbox" id="ui"
+          name="ui" value="ui">
+          <label for="ui">User-Interface</label>
+          <br>
+         <input type="checkbox" 
+         id="color-scheme"
+          name="color-scheme" 
+          value="color-scheme">
+          <label 
+          for="color-scheme">
+          Color-Scheme</label>
+          <br>
+          <input type="checkbox" 
+          id="responsiveness"
+          name="responsiveness" 
+          value="responsiveness">
+          <label 
+          for="responsiveness">
+          Responsiveness</label><br>
+
+        <!-- textarea -->
+        <label for="comment">Any comments or suggestion?
+        </label>
+        <textarea rows="4" cols="50" id="comment" placeholder="Enter your comments here..."></textarea>
+
+            <!-- submit-button -->
+        <button type="submit" id="submit"><b>Submit</b></button>
+        </form>
+        </div>
+
+        </div>
+</body>
+</html>
